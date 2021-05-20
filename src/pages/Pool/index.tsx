@@ -61,11 +61,7 @@ export default function Pool() {
         <PageHeader
           title={TranslateString(262, 'Liquidity')}
           description={TranslateString(1168, 'Add liquidity to receive LP tokens')}
-        >
-          <Button id="join-pool-button" disabled mb="16px">
-            {TranslateString(168, "You can't add liquidity on V1")}
-          </Button>
-        </PageHeader>
+        />
         <AutoColumn gap="lg" justify="center">
           <CardBody>
             <AutoColumn gap="12px" style={{ width: '100%' }}>

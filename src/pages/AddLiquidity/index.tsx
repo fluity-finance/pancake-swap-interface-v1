@@ -288,6 +288,7 @@ export default function AddLiquidity({
     setTxHash('')
   }, [onFieldAInput, txHash])
 
+
   return (
     <Container>
       <CardNav activeIndex={1} />
@@ -426,7 +427,6 @@ export default function AddLiquidity({
                         setShowConfirm(true)
                       }
                     }}
-                    disabled
                     variant={
                       !isValid && !!parsedAmounts[Field.CURRENCY_A] && !!parsedAmounts[Field.CURRENCY_B]
                         ? 'danger'
@@ -434,7 +434,7 @@ export default function AddLiquidity({
                     }
                     width="100%"
                   >
-                    {error ?? "You can't add liquidity on V1"}
+                    {error ?? "Add Liquidity"}
                   </Button>
                 </AutoColumn>
               )}

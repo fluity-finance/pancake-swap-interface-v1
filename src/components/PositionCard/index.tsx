@@ -201,15 +201,13 @@ export default function FullPositionCard({ pair, removeOnly }: PositionCardProps
             </FixedHeightRow>
 
             <RowBetween marginTop="10px">
-              {removeOnly && (
-                <Button
-                  as={Link}
-                  to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}
-                  style={{ width: '48%' }}
-                >
-                  Add
-                </Button>
-              )}
+              <Button
+                as={Link}
+                to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}
+                style={{ width: '48%' }}
+              >
+                Add
+              </Button>
               <Button
                 as={Link}
                 style={{ width: '48%' }}

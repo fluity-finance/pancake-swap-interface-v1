@@ -60,7 +60,6 @@ export default function App() {
 
   useEffect(() => {
     const showModal = () => {
-      onPresentUseV2ExchangeModal()
       setHasSeenModal(true)
     }
     if (!hasSeenModal) {
